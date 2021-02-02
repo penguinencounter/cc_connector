@@ -36,5 +36,5 @@ while true do
     pcall(accept_commands,websock)
     term.blit("[INFO] attempting to reconnect", "999999eeeeeeeeeeeeeeeeeeeeeeee", "ffffffffffffffffffffffffffffff")
     print()
-    websock.close()
+    pcall(websock.close)
 end
